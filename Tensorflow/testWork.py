@@ -7,15 +7,18 @@ import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
 
-a = tf.random_normal([2,20])
-sess = tf.Session()
+# the first test code
+a = tf.random_normal([2,20]) # define a 2x20 martix of random numbers
+sess = tf.Session() # start a tf session
 out = sess.run(a)
-x, y = out
+x, y = out # split up the 2x20 martix into two 1x10 vectors ==> x and y
 plt.scatter(x,y)
 plt.show()
 
-# a = tf.random_normal((100, 100))
-# b = tf.random_normal((100, 500))
-# c = tf.matmul(a, b)
+
+# the second test code
+# A = tf.random_normal((10, 2)) # A is a 10x2 martix of random numbers
+# B = tf.random_normal((2, 5)) # B is a 2x5 martix of random numbers
+# C = tf.matmul(A, B) # matrix multiply A x B
 # sess = tf.InteractiveSession()
 # print(sess.run(c))
