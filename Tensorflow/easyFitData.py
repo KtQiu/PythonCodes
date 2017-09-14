@@ -58,3 +58,8 @@ result :
 200 [ 2.99999857] [ 0.50000066] 1.64349e-13
 
 '''
+
+'''
+before you active a seesion and function run() is be called,
+the python code using tensorflow will not do anything
+'''
